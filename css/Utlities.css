@@ -1,0 +1,77 @@
+/* Variables */
+:root {
+  --dark-blue: hsl(233, 26%, 24%);
+  --lime-green: hsl(136, 65%, 51%);
+  --bright-cyan: hsl(192, 70%, 51%);
+  --grayish-blue: hsl(233, 8%, 62%);
+  --light-grayish-blue: hsl(220, 16%, 96%);
+  --very-light-gray: hsl(0, 0%, 98%);
+  --white: #fff;
+}
+/* Variables */
+
+/* Remove padding & margin from the page */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+p {
+  line-height: 1.8;
+}
+
+/* Row */
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Row */
+
+/* Text */
+.text-center {
+  text-align: center;
+}
+
+.text-primary {
+  color: var(--dark-blue);
+}
+
+/* button */
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  border-radius: 25px;
+  border: 0;
+  font-size: 15px;
+  cursor: pointer;
+  font-family: inherit;
+  text-decoration: none;
+}
+.btn:focus {
+  outline: none;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn-primary {
+  background: linear-gradient(to right, var(--lime-green), var(--bright-cyan));
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(to left, var(--lime-green), var(--bright-cyan));
+}
